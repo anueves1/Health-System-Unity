@@ -62,15 +62,14 @@ public class CameraDamageApplier : MonoBehaviour
                         return;
                     }
 
-                    //Get the direction from the hit point to the camera.
-                    Vector3 fromObjectToHere = transform.position - hit.point;
+                    //Get the direction to the point.
+                    Vector3 dirToPoint = (hit.point - transform.position).normalized;
 
-                    //Get the hit point and add that direction to it.
-                    Vector3 instantiatePosition = hit.point;
-                    instantiatePosition += fromObjectToHere.normalized * m_ParticlesOffset;
+                    //Spawn point for particles.
+                    Vector3 spawnPoint = transform.position + (dirToPoint * m_ParticlesOffset);
 
                     //Spawn some particles.
-                    GameObject hitParts = Instantiate(m_HitParticles, instantiatePosition, Quaternion.identity);
+                    GameObject hitParts = Instantiate(m_HitParticles, spawnPoint, Quaternion.identity);
 
                     //Destroy them after some time.
                     Destroy(hitParts, m_ParticleDestroyTime);

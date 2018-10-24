@@ -42,7 +42,7 @@ public class DamageableEntity : MonoBehaviour
         Destroy(gameObject);
 
         //Spawn destroy particles.
-        GameObject particles = Instantiate(m_DestroyParticles, transform.position, transform.rotation);
+        GameObject particles = Instantiate(m_DestroyParticles, transform.position + Vector3.up, transform.rotation);
 
         //Destroy them after some time.
         Destroy(particles, m_ParticleDestroyTime);

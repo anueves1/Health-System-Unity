@@ -2,7 +2,7 @@
 
 public class DamageableEntity : MonoBehaviour
 {
-    public AudioClip[] DestroyClips { get { return m_DestroyClips; } }
+    public AudioClip[] DestroyClips => m_DestroyClips;
 
     [SerializeField]
     private float m_MaxHealth = 100;
@@ -10,13 +10,16 @@ public class DamageableEntity : MonoBehaviour
     [Header("On Death")]
 
     [SerializeField]
+    private Item[] m_ItemDrops;
+
+    [SerializeField]
+    private float m_SpawnRange = 2f;
+
+    [SerializeField]
     private AudioClip[] m_DestroyClips;
 
     [SerializeField]
     private GameObject m_DestroyParticles;
-
-    [SerializeField]
-    private float m_ParticleDestroyTime = 5f;
 
     private float m_CurrentHealth;
 
@@ -44,9 +47,33 @@ public class DamageableEntity : MonoBehaviour
         //Spawn destroy particles.
         GameObject particles = Instantiate(m_DestroyParticles, transform.position + Vector3.up, transform.rotation);
 
-        //Destroy them after some time.
-        Destroy(particles, m_ParticleDestroyTime);
+        DropItems();
     }
 
-    public bool IsDead() { return m_CurrentHealth <= 0; }
+    private void DropItems()
+    {
+        //Loop trough the items.
+        for(var i = 0; i < m_ItemDrops.Length; i++)
+        {
+            //Get the current item to drop.
+            Item current = m_ItemDrops[i];
+
+            //Loop trough the amount of items we need to spawn.
+            for(var p = 0; p < current.Amount; p++)
+            {
+                //Get a random value to offset the item drop by.
+                Vector3 offset = Random.insideUnitSphere * m_SpawnRange;
+                //Add the y offset.
+                offset.y = current.YOffset;
+
+                //Get the position with the added offset.
+                Vector3 dropPosition = transform.position + offset;
+
+                //Instantiate the item.
+                Instantiate(current.Prefab, dropPosition, current.Prefab.transform.rotation);
+            }
+        }
+    }
+
+    public bool IsDead() => m_CurrentHealth <= 0;
 }

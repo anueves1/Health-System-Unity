@@ -1273,6 +1273,38 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 164932139}
   m_PrefabAsset: {fileID: 0}
+--- !u!84 &183835359
+RenderTexture:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_ImageContentsHash:
+    serializedVersion: 2
+    Hash: 00000000000000000000000000000000
+  m_ForcedFallbackFormat: 4
+  m_DownscaleFallback: 0
+  m_Width: 2022
+  m_Height: 920
+  m_AntiAliasing: 1
+  m_DepthFormat: 1
+  m_ColorFormat: 7
+  m_MipMap: 0
+  m_GenerateMips: 1
+  m_SRGB: 0
+  m_UseDynamicScale: 0
+  m_BindMS: 0
+  m_TextureSettings:
+    serializedVersion: 2
+    m_FilterMode: 1
+    m_Aniso: 1
+    m_MipBias: 0
+    m_WrapU: 1
+    m_WrapV: 1
+    m_WrapW: 1
+  m_Dimension: 2
+  m_VolumeDepth: 1
 --- !u!1001 &209369650
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2287,12 +2319,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_MaxHealth: 100
+  m_ItemDrops: []
+  m_SpawnRange: 2
   m_DestroyClips:
   - {fileID: 8300000, guid: 7e26c9daf4c32483b9c2790e662d3f1b, type: 3}
   - {fileID: 8300000, guid: 7bef0064f8567430cac22499c6b93d4f, type: 3}
   m_DestroyParticles: {fileID: 1892078723244562, guid: 46876a2780737ec45a19d62f88e5ce56,
     type: 3}
-  m_ParticleDestroyTime: 5
 --- !u!114 &340067931
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3324,12 +3357,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_MaxHealth: 100
+  m_ItemDrops: []
+  m_SpawnRange: 2
   m_DestroyClips:
   - {fileID: 8300000, guid: 7e26c9daf4c32483b9c2790e662d3f1b, type: 3}
   - {fileID: 8300000, guid: 7bef0064f8567430cac22499c6b93d4f, type: 3}
   m_DestroyParticles: {fileID: 1892078723244562, guid: 46876a2780737ec45a19d62f88e5ce56,
     type: 3}
-  m_ParticleDestroyTime: 5
 --- !u!114 &540967460
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3875,12 +3909,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_MaxHealth: 100
+  m_ItemDrops: []
+  m_SpawnRange: 2
   m_DestroyClips:
   - {fileID: 8300000, guid: 7e26c9daf4c32483b9c2790e662d3f1b, type: 3}
   - {fileID: 8300000, guid: 7bef0064f8567430cac22499c6b93d4f, type: 3}
   m_DestroyParticles: {fileID: 1892078723244562, guid: 46876a2780737ec45a19d62f88e5ce56,
     type: 3}
-  m_ParticleDestroyTime: 5
 --- !u!114 &599786921
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4723,12 +4758,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_MaxHealth: 100
+  m_ItemDrops: []
+  m_SpawnRange: 2
   m_DestroyClips:
   - {fileID: 8300000, guid: 7e26c9daf4c32483b9c2790e662d3f1b, type: 3}
   - {fileID: 8300000, guid: 7bef0064f8567430cac22499c6b93d4f, type: 3}
   m_DestroyParticles: {fileID: 1892078723244562, guid: 46876a2780737ec45a19d62f88e5ce56,
     type: 3}
-  m_ParticleDestroyTime: 5
 --- !u!114 &739501588
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4891,12 +4927,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_MaxHealth: 100
+  m_ItemDrops: []
+  m_SpawnRange: 2
   m_DestroyClips:
   - {fileID: 8300000, guid: 7e26c9daf4c32483b9c2790e662d3f1b, type: 3}
   - {fileID: 8300000, guid: 7bef0064f8567430cac22499c6b93d4f, type: 3}
   m_DestroyParticles: {fileID: 1892078723244562, guid: 46876a2780737ec45a19d62f88e5ce56,
     type: 3}
-  m_ParticleDestroyTime: 5
 --- !u!1001 &755288542
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5615,12 +5652,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_MaxHealth: 100
+  m_ItemDrops: []
+  m_SpawnRange: 2
   m_DestroyClips:
   - {fileID: 8300000, guid: 7e26c9daf4c32483b9c2790e662d3f1b, type: 3}
   - {fileID: 8300000, guid: 7bef0064f8567430cac22499c6b93d4f, type: 3}
   m_DestroyParticles: {fileID: 1892078723244562, guid: 46876a2780737ec45a19d62f88e5ce56,
     type: 3}
-  m_ParticleDestroyTime: 5
 --- !u!114 &904266805
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5870,7 +5908,6 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 29bde6326b4c34ad8a12da475f79b50a, type: 3}
   m_ParticlesOffset: 15
   m_HitParticles: {fileID: 100004, guid: f95ff734540a0d749be6571b6cb5b37f, type: 3}
-  m_ParticleDestroyTime: 5
 --- !u!124 &965026166
 Behaviour:
   m_ObjectHideFlags: 0
@@ -6061,8 +6098,8 @@ MonoBehaviour:
   sourceCamera: {fileID: 965026167}
   outlineCamera: {fileID: 1634699930}
   outlineShaderMaterial: {fileID: 0}
-  renderTexture: {fileID: 0}
-  extraRenderTexture: {fileID: 0}
+  renderTexture: {fileID: 1906377769}
+  extraRenderTexture: {fileID: 183835359}
 --- !u!1001 &980475514
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6520,12 +6557,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_MaxHealth: 100
+  m_ItemDrops: []
+  m_SpawnRange: 2
   m_DestroyClips:
   - {fileID: 8300000, guid: 7e26c9daf4c32483b9c2790e662d3f1b, type: 3}
   - {fileID: 8300000, guid: 7bef0064f8567430cac22499c6b93d4f, type: 3}
   m_DestroyParticles: {fileID: 1965343156803978, guid: aa8d6482d70a23445b4b2a928ed1b845,
     type: 3}
-  m_ParticleDestroyTime: 5
 --- !u!65 &1039035862
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7847,7 +7885,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400008, guid: 6fc44b1433b649546802219f8c93c5fd, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 514.5952
+      value: 516.6
       objectReference: {fileID: 0}
     - target: {fileID: 400008, guid: 6fc44b1433b649546802219f8c93c5fd, type: 3}
       propertyPath: m_LocalRotation.x
@@ -7897,38 +7935,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1298998917}
   m_PrefabAsset: {fileID: 0}
---- !u!84 &1301318018
-RenderTexture:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 
-  m_ImageContentsHash:
-    serializedVersion: 2
-    Hash: 00000000000000000000000000000000
-  m_ForcedFallbackFormat: 4
-  m_DownscaleFallback: 0
-  m_Width: 2047
-  m_Height: 920
-  m_AntiAliasing: 1
-  m_DepthFormat: 1
-  m_ColorFormat: 7
-  m_MipMap: 0
-  m_GenerateMips: 1
-  m_SRGB: 0
-  m_UseDynamicScale: 0
-  m_BindMS: 0
-  m_TextureSettings:
-    serializedVersion: 2
-    m_FilterMode: 1
-    m_Aniso: 1
-    m_MipBias: 0
-    m_WrapU: 1
-    m_WrapV: 1
-    m_WrapW: 1
-  m_Dimension: 2
-  m_VolumeDepth: 1
 --- !u!1001 &1314518087
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8318,12 +8324,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_MaxHealth: 100
+  m_ItemDrops: []
+  m_SpawnRange: 2
   m_DestroyClips:
   - {fileID: 8300000, guid: 7e26c9daf4c32483b9c2790e662d3f1b, type: 3}
   - {fileID: 8300000, guid: 7bef0064f8567430cac22499c6b93d4f, type: 3}
   m_DestroyParticles: {fileID: 1892078723244562, guid: 46876a2780737ec45a19d62f88e5ce56,
     type: 3}
-  m_ParticleDestroyTime: 5
 --- !u!114 &1394783904
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8485,12 +8492,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_MaxHealth: 100
+  m_ItemDrops: []
+  m_SpawnRange: 2
   m_DestroyClips:
   - {fileID: 8300000, guid: 7e26c9daf4c32483b9c2790e662d3f1b, type: 3}
   - {fileID: 8300000, guid: 7bef0064f8567430cac22499c6b93d4f, type: 3}
   m_DestroyParticles: {fileID: 1892078723244562, guid: 46876a2780737ec45a19d62f88e5ce56,
     type: 3}
-  m_ParticleDestroyTime: 5
 --- !u!114 &1401590062
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8585,12 +8593,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_MaxHealth: 100
+  m_ItemDrops: []
+  m_SpawnRange: 2
   m_DestroyClips:
   - {fileID: 8300000, guid: 7e26c9daf4c32483b9c2790e662d3f1b, type: 3}
   - {fileID: 8300000, guid: 7bef0064f8567430cac22499c6b93d4f, type: 3}
   m_DestroyParticles: {fileID: 1892078723244562, guid: 46876a2780737ec45a19d62f88e5ce56,
     type: 3}
-  m_ParticleDestroyTime: 5
 --- !u!114 &1416239411
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9264,12 +9273,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_MaxHealth: 100
+  m_ItemDrops: []
+  m_SpawnRange: 2
   m_DestroyClips:
   - {fileID: 8300000, guid: 7e26c9daf4c32483b9c2790e662d3f1b, type: 3}
   - {fileID: 8300000, guid: 7bef0064f8567430cac22499c6b93d4f, type: 3}
   m_DestroyParticles: {fileID: 1892078723244562, guid: 46876a2780737ec45a19d62f88e5ce56,
     type: 3}
-  m_ParticleDestroyTime: 5
 --- !u!1001 &1563786125
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9634,7 +9644,7 @@ Camera:
     serializedVersion: 2
     m_Bits: 0
   m_RenderingPath: 1
-  m_TargetTexture: {fileID: 1301318018}
+  m_TargetTexture: {fileID: 1906377769}
   m_TargetDisplay: 0
   m_TargetEye: 3
   m_HDR: 0
@@ -9740,12 +9750,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_MaxHealth: 100
+  m_ItemDrops: []
+  m_SpawnRange: 2
   m_DestroyClips:
   - {fileID: 8300000, guid: 7e26c9daf4c32483b9c2790e662d3f1b, type: 3}
   - {fileID: 8300000, guid: 7bef0064f8567430cac22499c6b93d4f, type: 3}
   m_DestroyParticles: {fileID: 1845240806346120, guid: b395d5d6eb4b4b846acc021ee036b744,
     type: 3}
-  m_ParticleDestroyTime: 5
 --- !u!114 &1693139339
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9888,6 +9899,60 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1711375815}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1751240325 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100050, guid: d4806800cc28bd446899f2e9902ed943,
+    type: 3}
+  m_PrefabInstance: {fileID: 1890239360}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1751240328
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1751240325}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.8942032, y: 10.530664, z: 12.741586}
+  m_Center: {x: -0.0054366407, y: 3.296682, z: 1.0428495}
+--- !u!114 &1751240329
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1751240325}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbf3575480402db40813e763382412fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  color: 1
+  eraseRenderer: 0
+  originalLayer: 0
+  originalMaterials: []
+--- !u!114 &1751240330
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1751240325}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 464adb638361c1b41af4d10cd1949af5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MaxHealth: 100
+  m_ItemDrops: []
+  m_SpawnRange: 2
+  m_DestroyClips:
+  - {fileID: 8300000, guid: 7e26c9daf4c32483b9c2790e662d3f1b, type: 3}
+  - {fileID: 8300000, guid: 7bef0064f8567430cac22499c6b93d4f, type: 3}
+  m_DestroyParticles: {fileID: 100000, guid: bc98890f6028f444eaa7789bde5e2eeb, type: 3}
 --- !u!1001 &1765481872
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10626,7 +10691,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 400000, guid: d4806800cc28bd446899f2e9902ed943, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -267.0309
+      value: -195.03
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d4806800cc28bd446899f2e9902ed943, type: 3}
       propertyPath: m_LocalPosition.y
@@ -10634,23 +10699,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d4806800cc28bd446899f2e9902ed943, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 451.291
+      value: 526.3
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d4806800cc28bd446899f2e9902ed943, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d4806800cc28bd446899f2e9902ed943, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0.923881
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d4806800cc28bd446899f2e9902ed943, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d4806800cc28bd446899f2e9902ed943, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: -0.38268006
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d4806800cc28bd446899f2e9902ed943, type: 3}
       propertyPath: m_RootOrder
@@ -10668,6 +10733,10 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.78
       objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: d4806800cc28bd446899f2e9902ed943, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -225
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d4806800cc28bd446899f2e9902ed943, type: 3}
 --- !u!4 &1890239361 stripped
@@ -10676,6 +10745,38 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1890239360}
   m_PrefabAsset: {fileID: 0}
+--- !u!84 &1906377769
+RenderTexture:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_ImageContentsHash:
+    serializedVersion: 2
+    Hash: 00000000000000000000000000000000
+  m_ForcedFallbackFormat: 4
+  m_DownscaleFallback: 0
+  m_Width: 2022
+  m_Height: 920
+  m_AntiAliasing: 1
+  m_DepthFormat: 1
+  m_ColorFormat: 7
+  m_MipMap: 0
+  m_GenerateMips: 1
+  m_SRGB: 0
+  m_UseDynamicScale: 0
+  m_BindMS: 0
+  m_TextureSettings:
+    serializedVersion: 2
+    m_FilterMode: 1
+    m_Aniso: 1
+    m_MipBias: 0
+    m_WrapU: 1
+    m_WrapV: 1
+    m_WrapW: 1
+  m_Dimension: 2
+  m_VolumeDepth: 1
 --- !u!1001 &1906884302
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10880,12 +10981,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_MaxHealth: 100
+  m_ItemDrops:
+  - m_Prefab: {fileID: 1000010714891294, guid: 5a0537415d4017c4fad7a4986f502dc1, type: 3}
+    m_Amount: 1
+    m_YOffset: 3
+  - m_Prefab: {fileID: 1000010986879176, guid: 8f226a393243a0141bace5fd6b60bafa, type: 3}
+    m_Amount: 1
+    m_YOffset: 3
+  m_SpawnRange: 5
   m_DestroyClips:
   - {fileID: 8300000, guid: 7e26c9daf4c32483b9c2790e662d3f1b, type: 3}
   - {fileID: 8300000, guid: 7bef0064f8567430cac22499c6b93d4f, type: 3}
   m_DestroyParticles: {fileID: 1892078723244562, guid: 46876a2780737ec45a19d62f88e5ce56,
     type: 3}
-  m_ParticleDestroyTime: 5
 --- !u!65 &1922287062
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10899,102 +11007,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 4, y: 4, z: 3}
   m_Center: {x: 0, y: 2, z: 0}
---- !u!82 &1922287063
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1922287060}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
 --- !u!1001 &1930099278
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11325,12 +11337,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_MaxHealth: 100
+  m_ItemDrops: []
+  m_SpawnRange: 2
   m_DestroyClips:
   - {fileID: 8300000, guid: 7e26c9daf4c32483b9c2790e662d3f1b, type: 3}
   - {fileID: 8300000, guid: 7bef0064f8567430cac22499c6b93d4f, type: 3}
   m_DestroyParticles: {fileID: 1892078723244562, guid: 46876a2780737ec45a19d62f88e5ce56,
     type: 3}
-  m_ParticleDestroyTime: 5
 --- !u!114 &1999900334
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11799,12 +11812,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_MaxHealth: 100
+  m_ItemDrops: []
+  m_SpawnRange: 2
   m_DestroyClips:
   - {fileID: 8300000, guid: 7e26c9daf4c32483b9c2790e662d3f1b, type: 3}
   - {fileID: 8300000, guid: 7bef0064f8567430cac22499c6b93d4f, type: 3}
   m_DestroyParticles: {fileID: 1892078723244562, guid: 46876a2780737ec45a19d62f88e5ce56,
     type: 3}
-  m_ParticleDestroyTime: 5
 --- !u!114 &2105475005
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11856,12 +11870,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_MaxHealth: 100
+  m_ItemDrops: []
+  m_SpawnRange: 2
   m_DestroyClips:
   - {fileID: 8300000, guid: 7e26c9daf4c32483b9c2790e662d3f1b, type: 3}
   - {fileID: 8300000, guid: 7bef0064f8567430cac22499c6b93d4f, type: 3}
   m_DestroyParticles: {fileID: 1687118924408352, guid: 77c69ec12208c4c4380d15e30b6f8f68,
     type: 3}
-  m_ParticleDestroyTime: 5
 --- !u!1001 &2131203788
 PrefabInstance:
   m_ObjectHideFlags: 0

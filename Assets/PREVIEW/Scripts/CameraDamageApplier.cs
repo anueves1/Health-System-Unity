@@ -16,9 +16,6 @@ public class CameraDamageApplier : MonoBehaviour
     [SerializeField]
     private GameObject m_HitParticles;
 
-    [SerializeField]
-    private float m_ParticleDestroyTime;
-
     private AudioSource m_Source;
 
     private void Awake()
@@ -70,9 +67,6 @@ public class CameraDamageApplier : MonoBehaviour
 
                     //Spawn some particles.
                     GameObject hitParts = Instantiate(m_HitParticles, spawnPoint, Quaternion.identity);
-
-                    //Destroy them after some time.
-                    Destroy(hitParts, m_ParticleDestroyTime);
 
                     //Get the random index for the clip to play.
                     var randomClip = Random.Range(0, m_HitClips.Length);
